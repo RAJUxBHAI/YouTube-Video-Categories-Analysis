@@ -1,15 +1,13 @@
 # YouTube-Video-Categories-Analysis
-341066 – Ramanjan Dutta 341090 – Nandini Singh 341077 – Mohammed Sarshad
-
 *(Self-Study Project for DBMS class for ETB subject)*
 
 
 ## Group Details
 
 **Group 15 — Member Details**
-*341066 – Ramanjan Dutta 
-*341090 – Nandini Singh 
-*341077 – Mohammed Sarshad
+341066 – Ramanjan Dutta 
+341090 – Nandini Singh 
+341077 – Mohammed Sarshad
 
 
 *(Section B, PGDM-34)*
