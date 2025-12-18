@@ -1,11 +1,16 @@
-# YouTube-Video-Categories-Analysis
-*(Self-Study Project for DBMS class for ETB subject)*
-## Group Details
-**Group 15 — Member Details**
-341066 – Ramanjan Dutta 
-341090 – Nandini Singh 
-341077 – Mohammed Sarshad
+# Employee Burnout & Turnover Prediction Analysis
 
+*(Self-Study Project for DBMS – ETB Subject)*
+
+---
+
+## Group Details
+
+**Group 15 — Member Details**
+
+* 341066 – Ramanjan Dutta
+* 341090 – Nandini Singh
+* 341077 – Mohammed Sarshad
 
 *(Section B, PGDM-34)*
 
@@ -13,68 +18,123 @@
 
 ## Project Overview
 
-This project focuses on analyzing **YouTube video categories metadata** to understand how content on the platform is classified and distributed across different domains such as Entertainment, Education, Music, Sports, and Technology. The dataset consists of official YouTube category information retrieved via the **YouTube Data API**, stored and analyzed using **MongoDB Atlas**.
+This project focuses on analyzing **employee burnout and turnover patterns** using a large-scale workforce dataset containing over **800,000 employee records**. The objective is to understand how organizational, personal, and work-related factors contribute to employee burnout and attrition risk.
 
-The primary objective of the project is to demonstrate **NoSQL data modeling, aggregation, and visualization techniques** using MongoDB. The analysis and dashboard were built using **MongoDB Atlas Charts**, showcasing category distribution and assignability insights.
+The dataset was sourced from **Kaggle** and stored in **MongoDB Atlas**, where it was modeled, queried, and analyzed using NoSQL principles. An interactive analytics dashboard was built using **MongoDB Atlas Charts** to visualize trends, correlations, and workforce insights.
 
-This project was completed as part of the **ETB – Database Management Systems (DBMS)** self-study component under the guidance of **Prof. Ashok Harnal**, FORE School of Management, New Delhi.
+This project was completed as part of the **ETB – Database Management Systems (DBMS)** self-study component, demonstrating the application of NoSQL data modeling and visualization techniques on a real-world HR analytics problem.
+
+---
+
+## Business Problem Statement
+
+Employee burnout and high turnover lead to:
+
+* Increased hiring and training costs
+* Loss of productivity and morale
+* Reduced organizational stability
+
+By analyzing historical employee data, organizations can **identify burnout indicators early** and design data-driven HR strategies to improve employee retention and well-being.
 
 ---
 
 ## Key Business Insights
 
-* **Content Classification**: YouTube organizes its platform into **31 distinct content categories**, enabling structured content discovery and moderation.
-* **Assignable vs Non-Assignable Categories**: Not all categories can be assigned to uploaded videos, indicating platform-level restrictions on certain content types.
-* **Platform Strategy Insight**: Categories such as *Music, Film & Animation, Education,* and *Entertainment* dominate the assignable space, reflecting YouTube’s focus on mass-consumption content.
-* **Data Modeling Insight**: The project highlights how **nested JSON data** from APIs can be effectively transformed and visualized using MongoDB’s aggregation framework.
+* **Burnout vs Workload:** Employees with longer working hours and high workload indicators show higher burnout levels.
+* **Experience & Attrition:** Early-career employees are more prone to burnout and turnover compared to experienced employees.
+* **Work-Life Balance Impact:** Poor work-life balance strongly correlates with increased burnout scores.
+* **Role-Based Patterns:** Certain job roles and departments exhibit consistently higher burnout and attrition risk.
+* **Predictive Value of Burnout:** Burnout score acts as a leading indicator for employee turnover probability.
 
----
-
-## Tools Used
-
-* **Data Collection**: YouTube Data API (JSON format)
-* **Database**: MongoDB Atlas (Cloud-based NoSQL Database)
-* **Data Processing**: MongoDB Aggregation Framework (`$unwind`, `$project`)
-* **Visualization**: MongoDB Atlas Charts (Interactive Dashboard)
+These insights highlight how workforce data can support **proactive HR decision-making**.
 
 ---
 
 ## Dataset Used
 
-**YouTube Video Categories Dataset**
+**Employee Burnout and Turnover Prediction Dataset**
 
-* Source: YouTube Data API
-* Format: JSON
-* Key Fields:
+* **Source:** Kaggle
+* **Records:** ~800,000 employees
+* **Format:** CSV (ingested into MongoDB collections)
 
-  * Category ID
-  * Category Title
-  * Assignable Flag
+### Key Attributes
 
-The dataset was stored as a nested document structure and later flattened using aggregation pipelines for dashboard visualization.
+* Employee ID
+* Age & Gender
+* Job Role & Department
+* Years of Experience
+* Workload & Work-Life Balance Indicators
+* Burnout Score
+* Turnover / Attrition Flag
+
+The dataset represents a realistic HR analytics scenario suitable for large-scale NoSQL analysis.
+
+---
+
+## Database & Data Modeling
+
+* The dataset was stored in **MongoDB Atlas** as a document-based collection.
+* Each employee record was modeled as a **single document**, allowing flexible schema evolution.
+* Indexes were created on commonly queried fields such as:
+
+  * Department
+  * Job Role
+  * Burnout Score
+  * Attrition Flag
+
+MongoDB’s schema-less design enabled efficient handling of a large and diverse dataset.
+
+---
+
+## Tools & Technologies Used
+
+* **Data Source:** Kaggle
+* **Database:** MongoDB Atlas (Cloud NoSQL Database)
+* **Data Processing:** MongoDB Aggregation Framework
+
+  * `$match`, `$group`, `$project`, `$bucket`
+* **Visualization:** MongoDB Atlas Charts
+* **Dashboard Link:** Public MongoDB Charts Dashboard
 
 ---
 
 ## Dashboard Overview
 
-The MongoDB Charts dashboard provides an interactive view of:
+The MongoDB Charts dashboard provides interactive visualizations including:
 
-* Distribution of YouTube video categories
-* Assignable vs non-assignable category comparison
-* Category-level summary metrics
-* Tabular view of category metadata
+* Burnout score distribution across employees
+* Attrition comparison by department and role
+* Work-life balance vs burnout analysis
+* Experience level vs turnover probability
+* Summary metrics and filtered views
 
-The dashboard demonstrates real-world usage of **MongoDB Charts for business analytics** on semi-structured data.
-
-*(A PDF snapshot of the dashboard is included in the repository for reference.)*
+The dashboard demonstrates how MongoDB Charts can be used for **HR analytics and decision support**.
 
 ---
 
 ## Learning Outcomes
 
-* Practical understanding of **NoSQL schema design**
-* Hands-on experience with **MongoDB aggregation pipelines**
-* Building dashboards from **nested JSON API data**
-* Using MongoDB Atlas Charts for **business intelligence and storytelling**
+Through this project, the following DBMS concepts were applied:
+
+* NoSQL data modeling for large datasets
+* Indexing strategies for analytical queries
+* MongoDB aggregation pipelines for insights generation
+* Building interactive dashboards for business storytelling
+* Applying database concepts to real-world HR problems
 
 ---
+
+## Conclusion
+
+The **Employee Burnout & Turnover Prediction Analysis** project showcases how NoSQL databases like MongoDB can be effectively used for large-scale workforce analytics. By combining flexible data modeling, aggregation pipelines, and interactive dashboards, the project demonstrates the practical role of DBMS concepts in solving real organizational challenges.
+
+This project serves as a strong example of **data-driven HR analytics using modern database technologies**.
+
+
+* Make this **shorter for a strict submission limit**
+* Rewrite it in a **more technical / examiner-focused tone**
+* Add a **MongoDB schema + aggregation explanation section**
+* Convert it into a **report-style document or PPT**
+
+Just say the word 👍
